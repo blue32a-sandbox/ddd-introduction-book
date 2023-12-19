@@ -5,5 +5,5 @@ $userName = new UserName('nrs');
 $user = new User($userId, $userName);
 
 // 生成したオブジェクト自身に問い合わせをすることになる
-$duplicateCheckResult = $user.exists($user);
+$duplicateCheckResult = $user->exists($user);
 var_dump($duplicateCheckResult);

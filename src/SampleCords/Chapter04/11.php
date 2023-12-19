@@ -7,7 +7,7 @@ class Program
         $user = new User(new UserName($userName));
 
         $userService = new UserService();
-        if ($userService.exists($user)) {
+        if ($userService->exists($user)) {
             throw new Exception(sprintf('%sは既に存在しています', $userName));
         }
 

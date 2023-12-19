@@ -7,5 +7,5 @@ $userName = new UserName('naruse');
 $user = new User($userId, $userName);
 
 // ドメインサービスに問い合わせ
-$duplicateCheckResult = $userService.exists($user);
+$duplicateCheckResult = $userService->exists($user);
 var_dump($duplicateCheckResult);
