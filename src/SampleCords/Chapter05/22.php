@@ -1,6 +1,6 @@
 <?php
 // 永続化を行うふるまい
-interface IUserRepocitory
+interface IUserRepository
 {
     public function save(User $user): void;
 

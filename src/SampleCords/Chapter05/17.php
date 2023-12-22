@@ -1,8 +1,8 @@
 <?php
 // ユーザ作成処理をテストする
-$userRepocitory = new InMemoryUserRepository();
-$program = new Program($userRepocitory);
+$userRepository = new InMemoryUserRepository();
+$program = new Program($userRepository);
 $program->createUser('nrs');
 
-$head = reset($userRepocitory->store);
+$head = reset($userRepository->store);
 assert('nrs' === $head->name->value);

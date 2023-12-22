@@ -1,6 +1,6 @@
 <?php
 // 探索に適したメソッド
-interface IUserRepocitory
+interface IUserRepository
 {
     public function findByUserName(UserName $name): ?User;
 

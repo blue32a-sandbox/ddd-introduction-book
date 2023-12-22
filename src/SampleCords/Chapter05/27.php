@@ -1,6 +1,6 @@
 <?php
 // すべてのオブジェクトを再構築するメソッド
-interface IUserRepocitory
+interface IUserRepository
 {
     public function findAll(): array;
 
