@@ -6,7 +6,7 @@ class UserService
     {
     }
 
-    public function exsits(User $user): bool
+    public function exists(User $user): bool
     {
         $duplicatedUser = $this->userRepository->find($user->getName());
 

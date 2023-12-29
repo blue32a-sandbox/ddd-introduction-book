@@ -12,7 +12,7 @@ class UserApplicationService
     {
         $user = User::craete(new UserName($name));
 
-        if ($this->userService->exsits($user)) {
+        if ($this->userService->exists($user)) {
             throw new CanNotRegisterUserException($user, 'ユーザは既に存在しています。');
         }
 
